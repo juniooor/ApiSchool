@@ -1,0 +1,8 @@
+from pyexpat import model
+from rest_framework import serializers
+from escola.models import Aluno
+
+class AlunoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Aluno
+        Fields = ['id', 'nome', 'rg']
