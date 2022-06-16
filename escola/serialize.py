@@ -5,4 +5,4 @@ from escola.models import Aluno
 class AlunoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Aluno
-        Fields = ['id', 'nome', 'rg']
+        fields = ['id', 'nome', 'rg']
